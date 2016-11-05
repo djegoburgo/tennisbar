@@ -1,0 +1,11 @@
+Liste des tournois ATP de l'année
+
+
+<ul>
+    <% @tournaments.each do |tournament| %>
+    <li>
+    <h4><%= tournament.name %></h4>
+    <%= tournament.id %>
+  </li>
+  <% end %>
+</ul>
