@@ -1,5 +1,8 @@
 class TournamentsController < ApplicationController
 
+  before_action :set_tournament, only: [:show, :search_rounds]
+
+
   def index
     require 'open-uri'
     require 'nokogiri'
@@ -25,10 +28,52 @@ class TournamentsController < ApplicationController
     end
 
     @tournaments = Tournament.all
+
+  end
+
+  def search_rounds
+    # @tournament = Tournament.find(params[:id])
+
+require 'nokogiri'
+
+    Round.destroy_all
+
+    file      = File.read(Rails.root.join('lib', 'seeds', 'chennai04_tournament.xml'))
+    document  = Nokogiri::XML(file)
+
+    round = {}
+
+    document.xpath('tournament').each do |tournament|
+       tournoi_id = "#{tournament['id']}"
+
+
+    document.xpath('//round').each do |round|
+
+     name = "#{round['name']}"
+     number = "#{round['number']}"
+     id = "#{round['id']}"
+
+    round = {
+      "id": id,
+      "name": name,
+      "number": number,
+      "tournament_id": 8449,
+    }
+
+    Round.create(round)
+
+      end
+    end
   end
 
   def show
+    @rounds = Round.all
+  end
 
+  private
+
+  def set_tournament
+    @tournament = Tournament.find(params[:id])
   end
 
 end
