@@ -46,29 +46,48 @@ class TournamentsController < ApplicationController
 
     round = {}
 
+    # récupération du tournament id pour s'assurer que l'on afficher les données du bon tournoi
     document.xpath('tournament').each do |tournament|
-       tournoi_id = "#{tournament['id']}"
+    tournoi_id = "#{tournament['id']}"
 
-    document.xpath('//round').each do |round|
+      # récupération des infos relatives au round
+      document.xpath('//round').each do |round|
 
-     name = "#{round['name']}"
-     number = "#{round['number']}"
-     id = "#{round['id']}"
+      name = "#{round['name']}"
+      number = "#{round['number']}"
+      # id = "#{round['id']}"
+      round_id = "#{round['id']}"
 
-    round = {
-      "id": id,
-      "name": name,
-      "number": number,
-      "tournament_id": @tournament.id,
-    }
+      # countruction du round depuis les infos scrappées
+      round = {
+        "id": round_id,
+        "name": name,
+        "number": number,
+        "tournament_id": @tournament.id,
+      }
 
-    if tournoi_id.to_i == @tournament.id
-    Round.create(round)
+        # if tournoi_id.to_i == @tournament.id
+        Round.create(round)
+        #       end
+        Match.destroy_all
 
+        document.xpath('///match').each do |match|
+
+        match_id = "#{match['id']}"
+
+        match = {
+          "id": match_id,
+          "round_id": round_id
+        }
+
+        # if tournoi_id.to_i == @tournament.id
+        # Round.create(round)
+        Match.create(match)
+          end
         end
-      end
     end
     @rounds = Round.all
+    @match = Match.all
   end
 
 

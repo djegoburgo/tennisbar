@@ -1,10 +1,10 @@
 
-# require 'nokogiri'
+require 'nokogiri'
 
 #     Round.destroy_all
 
-#     file      = File.read(Rails.root.join('lib', 'seeds', 'chennai04_tournament.xml'))
-#     document  = Nokogiri::XML(file)
+    file      = File.read(Rails.root.join('lib', 'seeds', 'chennai04_tournament.xml'))
+    document  = Nokogiri::XML(file)
 #     # csv_text = File.read(Rails.root.join('lib', 'seeds', 'real_estate_transactions.csv'))
 
 #     round = {}
@@ -29,5 +29,17 @@
 #     }
 
 #     Round.create(round)
-  end
+#
+#
+
+      document.xpath('//match').each_with_index do |match, 1|
+
+        id = "#{match['id']}"
+
+        match = {
+          "id": id
+        }
+
+        p match
+
 end

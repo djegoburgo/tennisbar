@@ -4,9 +4,11 @@
 Tableau :
 
 <% @tournament.rounds.each do|round| %>
-<h3><%= round.name %></h3>
+  <h3><%= round.name %></h3>
+  <% round.matchs.each do |match| %>
+    <%= match.id %>
+    <% end %>
 <% end %>
-
 
 
 
