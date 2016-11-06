@@ -29,8 +29,6 @@
          <set number="3" first_entry_games="6" second_entry_games="4" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346617"/>
         </score>
       </match>
-    </round>
-    <round id="43825" name="Moncul-Final" number="4">
       <match id="333379" date="2014-01-04">
         <first_entry id="346617" seed_position="1" draw_position="1">
            <player id="4" initials="" first_name="Rafael" last_name="Nadal" display_name="Rafael Nadal" nationality="ESP"/>
