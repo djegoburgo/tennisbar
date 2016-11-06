@@ -31,44 +31,45 @@ class TournamentsController < ApplicationController
 
   end
 
-  def search_rounds
-    # @tournament = Tournament.find(params[:id])
-
-require 'nokogiri'
-
-    Round.destroy_all
-
-    file      = File.read(Rails.root.join('lib', 'seeds', 'chennai04_tournament.xml'))
-    document  = Nokogiri::XML(file)
-
-    round = {}
-
-    document.xpath('tournament').each do |tournament|
-       tournoi_id = "#{tournament['id']}"
-
-
-    document.xpath('//round').each do |round|
-
-     name = "#{round['name']}"
-     number = "#{round['number']}"
-     id = "#{round['id']}"
-
-    round = {
-      "id": id,
-      "name": name,
-      "number": number,
-      "tournament_id": 8449,
-    }
-
-    Round.create(round)
-
-      end
-    end
-  end
 
   def show
-    @rounds = Round.all
+    # render 'rounds_controller/index'
+    redirect_to tournament_rounds_path(@tournament.id)
+    #  @tournament = Tournament.find(params[:id])
+
+    # require 'nokogiri'
+
+    # Round.destroy_all
+
+    # file      = File.read(Rails.root.join('lib', 'seeds', 'chennai04_tournament.xml'))
+    # document  = Nokogiri::XML(file)
+
+    # round = {}
+
+    # document.xpath('tournament').each do |tournament|
+    #    tournoi_id = "#{tournament['id']}"
+
+
+    # document.xpath('//round').each do |round|
+
+    #  name = "#{round['name']}"
+    #  number = "#{round['number']}"
+    #  id = "#{round['id']}"
+
+    # round = {
+    #   "id": id,
+    #   "name": name,
+    #   "number": number,
+    #   "tournament_id": @tournament.id,
+    # }
+    # if tournoi_id.to_i == @tournament.id
+    # Round.create(round)
+    #     end
+    #   end
+    # end
+    # @rounds = Round.all
   end
+
 
   private
 
