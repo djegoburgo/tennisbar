@@ -1,0 +1,40 @@
+<h1><%= @tournament.name %></h1>
+<!-- <h3><%= @tournament.id %></h3> -->
+
+Votre sélection de joueurs :
+<h1><% @selections.each do |selection| %></h1>
+<%= selection.firstentry %>
+<%= selection.secondentry %>
+<% end %>
+<br>
+<br>
+
+Tableau :
+<br>
+
+<% @tournament.rounds.each do|round| %>
+  <strong><%= round.name %></strong>
+  <br>
+  <% round.matchs.each do |match| %>
+    <br>
+    <% match.firstentrys.each do |firstentry| %>
+<!--     <% firstentry.player.display_name %> -->
+    <%= link_to "#{firstentry.player.display_name}", tournament_round_match_firstentry_path(@tournament, round, match, firstentry)%></h4>
+    <br>
+    v
+    <% match.secondentrys.each do |secondentry| %>
+    <!--     <% firstentry.player.display_name %> -->
+    <%= link_to "#{secondentry.player.display_name}", tournament_round_match_secondentry_path(@tournament, round, match, secondentry)%></h4>
+    <br>
+    <%= match.score.winning_entry_id %> wins in <%= match.score.number_of_sets %> sets
+   <br>
+   <br>
+      <% end %>
+    <% end %>
+  <% end %>
+<% end %>
+
+<br>
+<br>
+
+<%= link_to "retourner au calendrier", tournaments_path %>
