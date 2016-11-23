@@ -1,27 +1,106 @@
 <tournament id="8449" name="Aircel Chennai Open" surface="Hard">
   <competition id="8567" name="Mens Singles" sex="Mens">
     <round id="43829" name="Final" number="5">
-      <match id="333379" date="2014-01-04">
-        <first_entry id="346617" seed_position="1" draw_position="1">
+      <match id="333380" date="2014-01-04T04:30:00+00:00">
+        <first_entry id="346620" seed_position="1" draw_position="1">
            <player id="4" initials="" first_name="Rafael" last_name="Nadal" display_name="Rafael Nadal" nationality="ESP"/>
         </first_entry>
-        <second_entry id="346669" seed_position="" draw_position="13">
-          <player id="30534" initials="" first_name="Peter" last_name="Gojowczyk" display_name="Peter Gojowczyk" nationality="GER"/>
+        <second_entry id="346621" seed_position="" draw_position="13">
+          <player id="17" initials="" first_name="Richard" last_name="Gasquet" display_name="Richard Gasquet" nationality="FRA"/>
         </second_entry>
-        <score result_type="Win" number_of_sets="3" winning_entry_id="346617">
-          <set number="1" first_entry_games="4" second_entry_games="6" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346669"/>
-         <set number="2" first_entry_games="6" second_entry_games="2" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346617"/>
-         <set number="3" first_entry_games="6" second_entry_games="3" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346617"/>
+        <score result_type="Win" number_of_sets="3" winning_entry_id="346621">
+          <set number="1" first_entry_games="4" second_entry_games="6" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346620"/>
+         <set number="2" first_entry_games="6" second_entry_games="2" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346621"/>
+         <set number="3" first_entry_games="6" second_entry_games="3" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346621"/>
         </score>
       </match>
     </round>
     <round id="43828" name="Semi-Final" number="4">
-      <match id="333378" date="2014-01-04">
-        <first_entry id="346617" seed_position="1" draw_position="1">
+      <match id="333378" date="2014-01-04T13:30:00+00:00">
+        <first_entry id="333382" seed_position="1" draw_position="1">
            <player id="4" initials="" first_name="Rafael" last_name="Nadal" display_name="Rafael Nadal" nationality="ESP"/>
         </first_entry>
-        <second_entry id="346669" seed_position="" draw_position="13">
-          <player id="30534" initials="" first_name="Peter" last_name="Gojowczyk" display_name="Peter Gojowczyk" nationality="GER"/>
+        <second_entry id="333383" seed_position="" draw_position="13">
+          <player id="280" initials="" first_name="Igor" last_name="Sijsling" display_name="Igor Sijsling" nationality="NED"/>
+        </second_entry>
+        <score result_type="Win" number_of_sets="2" winning_entry_id="333382">
+          <set number="1" first_entry_games="7" second_entry_games="6" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="333382"/>
+         <set number="2" first_entry_games="6" second_entry_games="4" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="333382"/>
+        </score>
+      </match>
+      <match id="333377" date="2014-01-04T11:30:00+00:00">
+        <first_entry id="346622" seed_position="1" draw_position="1">
+           <player id="38" initials="" first_name="Julien" last_name="Benneteau" display_name="Julien Benneteau" nationality="FRA"/>
+        </first_entry>
+        <second_entry id="346623" seed_position="" draw_position="13">
+          <player id="17" initials="" first_name="Richard" last_name="Gasquet" display_name="Richard Gasquet" nationality="FRA"/>
+        </second_entry>
+        <score result_type="Win" number_of_sets="3" winning_entry_id="346623">
+          <set number="1" first_entry_games="0" second_entry_games="6" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346623"/>
+         <set number="2" first_entry_games="0" second_entry_games="6" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346622"/>
+         <set number="3" first_entry_games="6" second_entry_games="0" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346623"/>
+        </score>
+      </match>
+    </round>
+    <round id="43827" name="Quarter-final" number="3">
+      <match id="333373" date="2014-01-03T14:00:00+00:00">
+        <first_entry id="346624" seed_position="1" draw_position="1">
+           <player id="4" initials="" first_name="Rafael" last_name="Nadal" display_name="Rafael Nadal" nationality="ESP"/>
+        </first_entry>
+        <second_entry id="346625" seed_position="" draw_position="13">
+          <player id="84" initials="" first_name="Michael" last_name="Llodra" display_name="Michael Llodra" nationality="FRA"/>
+        </second_entry>
+        <score result_type="Win" number_of_sets="3" winning_entry_id="346624">
+          <set number="1" first_entry_games="4" second_entry_games="6" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346669"/>
+         <set number="2" first_entry_games="6" second_entry_games="4" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346624"/>
+         <set number="3" first_entry_games="6" second_entry_games="4" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346624"/>
+        </score>
+      </match>
+      <match id="333374" date="2014-01-03T14:25:00+00:00">
+        <first_entry id="346626" seed_position="" draw_position="13">
+          <player id="17" initials="" first_name="Richard" last_name="Gasquet" display_name="Richard Gasquet" nationality="FRA"/>
+        </first_entry>
+        <second_entry id="346627" seed_position="" draw_position="13">
+          <player id="300" initials="" first_name="Stephane" last_name="Robert" display_name="Stephane Robert" nationality="FRA"/>
+        </second_entry>
+        <score result_type="Win" number_of_sets="3" winning_entry_id="346626">
+          <set number="1" first_entry_games="6" second_entry_games="2" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346626"/>
+         <set number="2" first_entry_games="6" second_entry_games="0" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346626"/>
+        </score>
+      </match>
+      <match id="333375" date="2014-01-03T13:00:00+00:00">
+        <first_entry id="346628" seed_position="1" draw_position="1">
+           <player id="38" initials="" first_name="Julien" last_name="Benneteau" display_name="Julien Benneteau" nationality="FRA"/>
+        </first_entry>
+        <second_entry id="346629" seed_position="" draw_position="13">
+          <player id="33775" initials="" first_name="Grigor" last_name="Dimitrov" display_name="Peter Gojowczyk" nationality="BUL"/>
+        </second_entry>
+        <score result_type="Win" number_of_sets="3" winning_entry_id="346628">
+          <set number="1" first_entry_games="7" second_entry_games="6" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346628"/>
+         <set number="2" first_entry_games="6" second_entry_games="4" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346628"/>
+        </score>
+      </match>
+      <match id="333376" date="2014-01-03T11:35:00+00:00">
+        <first_entry id="346630" seed_position="1" draw_position="1">
+           <player id="280" initials="" first_name="Igor" last_name="Sijsling" display_name="Igor Sijsling" nationality="NED"/>
+        </first_entry>
+        <second_entry id="346631" seed_position="" draw_position="13">
+          <player id="178" initials="" first_name="Jo-Wilfried" last_name="Tsonga" display_name="Jo-Wilfried Tsonga" nationality="FRA"/>
+        </second_entry>
+        <score result_type="Win" number_of_sets="3" winning_entry_id="346630">
+          <set number="1" first_entry_games="0" second_entry_games="6" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346631"/>
+         <set number="2" first_entry_games="6" second_entry_games="0" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346630"/>
+         <set number="3" first_entry_games="6" second_entry_games="0" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346630"/>
+        </score>
+      </match>
+    </round>
+    <round id="43826" name="2nd Round" number="2">
+      <match id="333370" date="2014-01-02T14:40:00+00:00">
+        <first_entry id="346632" seed_position="1" draw_position="1">
+           <player id="8" initials="" first_name="Rafael" last_name="Nadal" display_name="Rafael Nadal" nationality="ESP"/>
+        </first_entry>
+        <second_entry id="346633" seed_position="" draw_position="13">
+          <player id="12" initials="" first_name="Peter" last_name="Gojowczyk" display_name="Peter Gojowczyk" nationality="GER"/>
         </second_entry>
         <score result_type="Win" number_of_sets="3" winning_entry_id="346617">
           <set number="1" first_entry_games="4" second_entry_games="6" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346669"/>
@@ -29,15 +108,93 @@
          <set number="3" first_entry_games="6" second_entry_games="4" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346617"/>
         </score>
       </match>
-      <match id="333370" date="2014-01-04">
-        <first_entry id="346617" seed_position="1" draw_position="1">
-           <player id="4" initials="" first_name="Rafael" last_name="Nadal" display_name="Rafael Nadal" nationality="ESP"/>
+      <match id="333369" date="2014-01-02T13:10:00+00:00">
+        <first_entry id="346634" seed_position="1" draw_position="1">
+           <player id="41" initials="" first_name="Rafael" last_name="Nadal" display_name="Rafael Nadal" nationality="ESP"/>
         </first_entry>
-        <second_entry id="346669" seed_position="" draw_position="13">
-          <player id="30534" initials="" first_name="Peter" last_name="Gojowczyk" display_name="Peter Gojowczyk" nationality="GER"/>
+        <second_entry id="346635" seed_position="" draw_position="13">
+          <player id="31" initials="" first_name="Peter" last_name="Gojowczyk" display_name="Peter Gojowczyk" nationality="GER"/>
         </second_entry>
         <score result_type="Win" number_of_sets="3" winning_entry_id="346617">
-          <set number="1" first_entry_games="0" second_entry_games="6" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346669"/>
+          <set number="1" first_entry_games="0" second_entry_games="6" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="34669"/>
+         <set number="2" first_entry_games="6" second_entry_games="0" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346617"/>
+         <set number="3" first_entry_games="6" second_entry_games="0" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346617"/>
+        </score>
+      </match>
+      <match id="333367" date="2014-01-02T11:45:00+00:00">
+        <first_entry id="346636" seed_position="1" draw_position="1">
+           <player id="8" initials="" first_name="Rafael" last_name="Nadal" display_name="Rafael Nadal" nationality="ESP"/>
+        </first_entry>
+        <second_entry id="346637" seed_position="" draw_position="13">
+          <player id="12" initials="" first_name="Peter" last_name="Gojowczyk" display_name="Peter Gojowczyk" nationality="GER"/>
+        </second_entry>
+        <score result_type="Win" number_of_sets="3" winning_entry_id="346617">
+          <set number="1" first_entry_games="4" second_entry_games="6" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346669"/>
+         <set number="2" first_entry_games="6" second_entry_games="4" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346617"/>
+         <set number="3" first_entry_games="6" second_entry_games="4" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346617"/>
+        </score>
+      </match>
+      <match id="333368" date="2014-01-02T13:30:00+00:00">
+        <first_entry id="346638" seed_position="1" draw_position="1">
+           <player id="41" initials="" first_name="Rafael" last_name="Nadal" display_name="Rafael Nadal" nationality="ESP"/>
+        </first_entry>
+        <second_entry id="346639" seed_position="" draw_position="13">
+          <player id="31" initials="" first_name="Peter" last_name="Gojowczyk" display_name="Peter Gojowczyk" nationality="GER"/>
+        </second_entry>
+        <score result_type="Win" number_of_sets="3" winning_entry_id="346617">
+          <set number="1" first_entry_games="0" second_entry_games="6" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="34669"/>
+         <set number="2" first_entry_games="6" second_entry_games="0" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346617"/>
+         <set number="3" first_entry_games="6" second_entry_games="0" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346617"/>
+        </score>
+      </match>
+      <match id="333366" date="2014-01-01T14:20:00+00:00">
+        <first_entry id="346640" seed_position="1" draw_position="1">
+           <player id="8" initials="" first_name="Rafael" last_name="Nadal" display_name="Rafael Nadal" nationality="ESP"/>
+        </first_entry>
+        <second_entry id="346641" seed_position="" draw_position="13">
+          <player id="12" initials="" first_name="Peter" last_name="Gojowczyk" display_name="Peter Gojowczyk" nationality="GER"/>
+        </second_entry>
+        <score result_type="Win" number_of_sets="3" winning_entry_id="346617">
+          <set number="1" first_entry_games="4" second_entry_games="6" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346669"/>
+         <set number="2" first_entry_games="6" second_entry_games="4" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346617"/>
+         <set number="3" first_entry_games="6" second_entry_games="4" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346617"/>
+        </score>
+      </match>
+      <match id="333365" date="2014-01-01T12:50:00+00:00">
+        <first_entry id="346643" seed_position="1" draw_position="1">
+           <player id="41" initials="" first_name="Rafael" last_name="Nadal" display_name="Rafael Nadal" nationality="ESP"/>
+        </first_entry>
+        <second_entry id="346648" seed_position="" draw_position="13">
+          <player id="31" initials="" first_name="Peter" last_name="Gojowczyk" display_name="Peter Gojowczyk" nationality="GER"/>
+        </second_entry>
+        <score result_type="Win" number_of_sets="3" winning_entry_id="346617">
+          <set number="1" first_entry_games="0" second_entry_games="6" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="34669"/>
+         <set number="2" first_entry_games="6" second_entry_games="0" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346617"/>
+         <set number="3" first_entry_games="6" second_entry_games="0" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346617"/>
+        </score>
+      </match>
+      <match id="333371" date="2014-01-01T11:40:00+00:00">
+        <first_entry id="346644" seed_position="1" draw_position="1">
+           <player id="8" initials="" first_name="Rafael" last_name="Nadal" display_name="Rafael Nadal" nationality="ESP"/>
+        </first_entry>
+        <second_entry id="346645" seed_position="" draw_position="13">
+          <player id="12" initials="" first_name="Peter" last_name="Gojowczyk" display_name="Peter Gojowczyk" nationality="GER"/>
+        </second_entry>
+        <score result_type="Win" number_of_sets="3" winning_entry_id="346617">
+          <set number="1" first_entry_games="4" second_entry_games="6" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346669"/>
+         <set number="2" first_entry_games="6" second_entry_games="4" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346617"/>
+         <set number="3" first_entry_games="6" second_entry_games="4" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346617"/>
+        </score>
+      </match>
+      <match id="333372" date="2014-01-01T11:50:00+00:00">
+        <first_entry id="346646" seed_position="1" draw_position="1">
+           <player id="41" initials="" first_name="Rafael" last_name="Nadal" display_name="Rafael Nadal" nationality="ESP"/>
+        </first_entry>
+        <second_entry id="346647" seed_position="" draw_position="13">
+          <player id="31" initials="" first_name="Peter" last_name="Gojowczyk" display_name="Peter Gojowczyk" nationality="GER"/>
+        </second_entry>
+        <score result_type="Win" number_of_sets="3" winning_entry_id="346617">
+          <set number="1" first_entry_games="0" second_entry_games="6" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="34669"/>
          <set number="2" first_entry_games="6" second_entry_games="0" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346617"/>
          <set number="3" first_entry_games="6" second_entry_games="0" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346617"/>
         </score>
