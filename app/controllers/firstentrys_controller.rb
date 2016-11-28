@@ -4,7 +4,8 @@ class FirstentrysController < ApplicationController
 
   def show
     @selection = Selection.new
-    @selection.firstentry_id = @firstentry.id
+    @selection.firstentry = @firstentry
+    raise
     @selection.save
     redirect_to(tournament_path(@tournament))
   end

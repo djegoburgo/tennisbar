@@ -1,4 +1,5 @@
 class Player < ActiveRecord::Base
-  has_many :firstentry
-  has_many :secondentry
+  belongs_to :selection
+  has_many :firstentrys
+  has_many :secondentrys
 end
