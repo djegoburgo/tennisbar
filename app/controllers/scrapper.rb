@@ -3,7 +3,7 @@ def scrapper
 
   require 'nokogiri'
 
-  Round.destroy_all
+  # Round.destroy_all
 
   file      = File.read(Rails.root.join('lib', 'seeds', 'chennai04_tournament.xml'))
   document  = Nokogiri::XML(file)
@@ -12,7 +12,7 @@ def scrapper
 
   # récupération du tournament id pour s'assurer que l'on afficher les données du bon tournoi
   document.xpath('tournament').each do |tournament|
-  p tournoi_id = "#{tournament['id']}"
+  tournoi_id = "#{tournament['id']}"
 
     # récupération des infos relatives au round
 
@@ -21,14 +21,14 @@ def scrapper
       Score.destroy_all
       Firstentry.destroy_all
       Secondentry.destroy_all
-      Player.destroy_all
+      # Player.destroy_all
 
         document.xpath('//round').each do |roundnode|
         name = "#{roundnode['name']}"
         number = "#{roundnode['number']}"
         round_id = "#{roundnode['id']}"
 
-        p round = {
+        round = {
           "id": round_id,
           "name": name,
           "number": number,
@@ -38,7 +38,7 @@ def scrapper
         roundnode.xpath('match').each do |matchnode|
         match_id = "#{matchnode['id']}"
 
-        p match = {
+        match = {
           "id": match_id,
           "round_id": round_id
         }
@@ -48,7 +48,7 @@ def scrapper
         winning_entry_id = "#{scorenode['winning_entry_id']}"
         number_of_sets = "#{scorenode['number_of_sets']}"
 
-        p score = {
+        score = {
           "match_id": match_id,
           "result_type": result_type,
           "winning_entry_id": winning_entry_id,
@@ -60,7 +60,7 @@ def scrapper
         first_entrynode.xpath('player').each do |player|
         firstplayer_id = "#{player['id']}"
 
-        p firstentry = {
+        firstentry = {
           "id": firstentry_id,
           "match_id": match_id,
           "player_id": firstplayer_id
@@ -71,7 +71,7 @@ def scrapper
         second_entrynode.xpath('player').each do |player|
         secondplayer_id = "#{player['id']}"
 
-        p secondtentry = {
+        secondtentry = {
           "id": secondentry_id,
           "match_id": match_id,
           "player_id": secondplayer_id
@@ -83,7 +83,7 @@ def scrapper
 
         p player = {
           "id": player_id,
-          "display_name": display_name
+          "display_name": display_name,
         }
 
         Round.find_or_create_by(round)

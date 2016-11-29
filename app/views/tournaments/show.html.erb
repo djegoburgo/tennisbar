@@ -2,10 +2,9 @@
 <!-- <h3><%= @tournament.id %></h3> -->
 
 Votre sélection de joueurs :
-<h1><% @selections.each do |selection| %></h1>
-<%= selection.firstentry %>
-<%= selection.secondentry %>
-<% end %>
+<h1><% @selections.first.players.each do |player| %></h1>
+<h1><%= player.display_name %></h1>
+<h1><% end %></h1>
 <br>
 <br>
 
