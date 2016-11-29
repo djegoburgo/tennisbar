@@ -2,9 +2,12 @@
 <!-- <h3><%= @tournament.id %></h3> -->
 
 Votre sélection de joueurs :
-<% if @selections.first.id = @tournament.id %>
-  <h1><% @selections.first.players.each do |player| %></h1>
-  <h1><%= player.display_name %></h1>
+<% if @selections.present? and @tournament.present? %>
+  <% if @selections.first.id = @tournament.id %>
+    <h1><% @selections.first.players.each do |player| %></h1>
+    <h1><%= player.display_name %></h1>
+    <i><%= link_to "DELETE PLAYER", selection_player_path(@selections.first.id, player), method: :delete %></i>
+    <% end %>
   <% end %>
 <% end %>
 <br>

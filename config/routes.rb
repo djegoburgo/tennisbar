@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
-  # post    "selection/create",      to: "selection#create"
-
+  resources :selections, only: [ :destroy ] do
+   resources :players, only: [ :destroy ]
+  end
 
   resources :tournaments, only: [ :index, :show ]  do
     resources :rounds, only: [ :index ] do
