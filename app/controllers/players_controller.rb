@@ -5,7 +5,7 @@ class PlayersController < ApplicationController
     @player = Player.find(params[:id])
     @player.selection_id = nil
     @player.save
-    redirect_to tournaments_path
+    redirect_to tournament_path(@selection)
   end
 
 end
