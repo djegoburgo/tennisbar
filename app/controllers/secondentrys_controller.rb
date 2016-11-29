@@ -3,8 +3,12 @@ class SecondentrysController < ApplicationController
 
   def show
     selection_id = @secondentry.player.selection_id = @selection.id
-    @secondentry.player.save({"selection_id": selection_id})
-    redirect_to(tournament_path(@tournament))
+    if @selection.players.count > 3
+      redirect_to tournaments_path
+    else
+      @secondentry.player.save({"selection_id": selection_id})
+      redirect_to(tournament_path(@tournament))
+    end
   end
 
     private
