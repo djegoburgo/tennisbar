@@ -5,7 +5,7 @@ Votre sélection de joueurs :
 <% if @selections.present? and @tournament.present? %>
   <% if @selections.first.id = @tournament.id %>
     <h1><% @selections.first.players.each do |player| %></h1>
-    <h1><%= player.display_name %></h1>
+    <h1><%= player.display_name %>  (<%= player.rank %>)</h1>
     <i><%= link_to "DELETE PLAYER", selection_player_path(@selections.first.id, player), method: :delete %></i>
     <% end %>
   <% end %>
@@ -22,12 +22,13 @@ Tableau :
   <% round.matchs.each do |match| %>
     <br>
     <% match.firstentrys.each do |firstentry| %>
-<!--     <% firstentry.player.display_name %> -->
+    (<%= firstentry.player.rank %>)
     <%= link_to "#{firstentry.player.display_name}", tournament_round_match_firstentry_path(@tournament, round, match, firstentry)%></h4>
     <br>
     v
+    <br>
     <% match.secondentrys.each do |secondentry| %>
-    <!--     <% firstentry.player.display_name %> -->
+    (<%= secondentry.player.rank %>)
     <%= link_to "#{secondentry.player.display_name}", tournament_round_match_secondentry_path(@tournament, round, match, secondentry)%></h4>
     <br>
     <%= match.score.winning_entry_id %> wins in <%= match.score.number_of_sets %> sets

@@ -3,13 +3,42 @@ class FirstentrysController < ApplicationController
   before_action :set_params
 
   def show
-    selection_id = @firstentry.player.selection_id = @selection.id
-    if @selection.players.count > 3
-      redirect_to tournaments_path
-    else
-      @firstentry.player.save({"selection_id": selection_id})
-      redirect_to(tournament_path(@tournament))
-    end
+      total_rank_array = []
+
+      selection_id = @firstentry.player.selection_id = @selection.id
+
+      @selection.players.each do |player|
+        total_rank_array << player.rank
+      end
+
+      # if @selection.players.size >= 3
+      #   flash[:notice] = "3 joueurs max"
+      # end
+
+      # if @selection.players.size >= 3
+      #   flash[:notice] = "3 joueurs max"
+      # end
+
+      # if @selection.players.size <= 2 and total_rank_array.inject(0){|sum,x| sum + x } > 60
+      #   @firstentry.player.save({"selection_id": selection_id})
+      #   redirect_to(tournament_path(@tournament))
+      #   raise
+      # else
+      #   redirect_to tournaments_path
+      # end
+
+      if
+        @selection.players.count == 2 and total_rank_array.inject(0){|sum,x| sum + x } < 30
+        flash[:alert] = "nawak"
+        redirect_to(tournament_path(@tournament))
+      elsif
+        @selection.players.count > 3
+        flash[:notice] = "nawak"
+        redirect_to(tournament_path(@tournament))
+      else
+        @firstentry.player.save({"selection_id": selection_id})
+        redirect_to(tournament_path(@tournament))
+      end
   end
 
     private
