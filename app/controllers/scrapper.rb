@@ -3,8 +3,6 @@ def scrapper
 
   require 'nokogiri'
 
-  # Round.destroy_all
-
   file      = File.read(Rails.root.join('lib', 'seeds', 'chennai04_tournament.xml'))
   document  = Nokogiri::XML(file)
 

@@ -1,0 +1,454 @@
+<abelsoninfo_feed name="Tennis" version="1.0" generated_at="2013-12-16T14:21:30+00:00">
+<rankings date="2013-12-16">
+<ranking rank="1" points="13030">
+<player id="4" initials="" first_name="Rafael" last_name="Nadal" display_name="Rafael Nadal" nationality="ESP"/>
+</ranking>
+<ranking rank="2" points="12260">
+<player id="7" initials="" first_name="Novak" last_name="Djokovic" display_name="Novak Djokovic" nationality="SRB"/>
+</ranking>
+<ranking rank="3" points="5800">
+<player id="18" initials="" first_name="David" last_name="Ferrer" display_name="David Ferrer" nationality="ESP"/>
+</ranking>
+<ranking rank="4" points="5790">
+<player id="12" initials="" first_name="Andy" last_name="Murray" display_name="Andy Murray" nationality="GBR"/>
+</ranking>
+<ranking rank="5" points="5255">
+<player id="65" initials="" first_name="Juan Martin" last_name="Del Potro" display_name="Juan Martin Del Potro" nationality="ARG"/>
+</ranking>
+<ranking rank="6" points="4205">
+<player id="3" initials="" first_name="Roger" last_name="Federer" display_name="Roger Federer" nationality="SUI"/>
+</ranking>
+<ranking rank="7" points="4180">
+<player id="14" initials="" first_name="Tomas" last_name="Berdych" display_name="Tomas Berdych" nationality="CZE"/>
+</ranking>
+<ranking rank="8" points="3730">
+<player id="50" initials="" first_name="Stanislas" last_name="Wawrinka" display_name="Stanislas Wawrinka" nationality="SUI"/>
+</ranking>
+<ranking rank="9" points="3300">
+<player id="17" initials="" first_name="Richard" last_name="Gasquet" display_name="Richard Gasquet" nationality="FRA"/>
+</ranking>
+<ranking rank="10" points="3065">
+<player id="178" initials="" first_name="Jo-Wilfried" last_name="Tsonga" display_name="Jo-Wilfried Tsonga" nationality="FRA"/>
+</ranking>
+<ranking rank="11" points="2860">
+<player id="32899" initials="" first_name="Milos" last_name="Raonic" display_name="Milos Raonic" nationality="CAN"/>
+</ranking>
+<ranking rank="12" points="2435">
+<player id="13" initials="" first_name="Tommy" last_name="Haas" display_name="Tommy Haas" nationality="GER"/>
+</ranking>
+<ranking rank="13" points="2290">
+<player id="41" initials="" first_name="Nicolas" last_name="Almagro" display_name="Nicolas Almagro" nationality="ESP"/>
+</ranking>
+<ranking rank="14" points="2150">
+<player id="30661" initials="" first_name="John" last_name="Isner" display_name="John Isner" nationality="USA"/>
+</ranking>
+<ranking rank="15" points="2145">
+<player id="19" initials="" first_name="Mikhail" last_name="Youzhny" display_name="Mikhail Youzhny" nationality="RUS"/>
+</ranking>
+<ranking rank="16" points="1930">
+<player id="202" initials="" first_name="Fabio" last_name="Fognini" display_name="Fabio Fognini" nationality="ITA"/>
+</ranking>
+<ranking rank="17" points="1915">
+<player id="30547" initials="" first_name="Kei" last_name="Nishikori" display_name="Kei Nishikori" nationality="JPN"/>
+</ranking>
+<ranking rank="18" points="1810">
+<player id="9" initials="" first_name="Tommy" last_name="Robredo" display_name="Tommy Robredo" nationality="ESP"/>
+</ranking>
+<ranking rank="19" points="1790">
+<player id="62" initials="" first_name="Gilles" last_name="Simon" display_name="Gilles Simon" nationality="FRA"/>
+</ranking>
+<ranking rank="20" points="1685">
+<player id="30365" initials="" first_name="Kevin" last_name="Anderson" display_name="Kevin Anderson" nationality="RSA"/>
+</ranking>
+<ranking rank="21" points="1615">
+<player id="33707" initials="" first_name="Jerzy" last_name="Janowicz" display_name="Jerzy Janowicz" nationality="POL"/>
+</ranking>
+<ranking rank="22" points="1525">
+<player id="51" initials="" first_name="Philipp" last_name="Kohlschreiber" display_name="Philipp Kohlschreiber" nationality="GER"/>
+</ranking>
+<ranking rank="23" points="1520">
+<player id="33775" initials="" first_name="Grigor" last_name="Dimitrov" display_name="Grigor Dimitrov" nationality="BUL"/>
+</ranking>
+<ranking rank="24" points="1393">
+<player id="87" initials="" first_name="Ernests" last_name="Gulbis" display_name="Ernests Gulbis" nationality="LAT"/>
+</ranking>
+<ranking rank="25" points="1360">
+<player id="96" initials="" first_name="Andreas" last_name="Seppi" display_name="Andreas Seppi" nationality="ITA"/>
+</ranking>
+<ranking rank="26" points="1345">
+<player id="33730" initials="" first_name="Benoit" last_name="Paire" display_name="Benoit Paire" nationality="FRA"/>
+</ranking>
+<ranking rank="27" points="1315">
+<player id="32" initials="" first_name="Jurgen" last_name="Melzer" display_name="Jurgen Melzer" nationality="AUT"/>
+</ranking>
+<ranking rank="28" points="1310">
+<player id="77" initials="" first_name="Feliciano" last_name="Lopez" display_name="Feliciano Lopez" nationality="ESP"/>
+</ranking>
+<ranking rank="29" points="1244">
+<player id="26" initials="" first_name="Dmitry" last_name="Tursunov" display_name="Dmitry Tursunov" nationality="RUS"/>
+</ranking>
+<ranking rank="30" points="1235">
+<player id="36" initials="" first_name="Fernando" last_name="Verdasco" display_name="Fernando Verdasco" nationality="ESP"/>
+</ranking>
+<ranking rank="31" points="1230">
+<player id="47" initials="" first_name="Gael" last_name="Monfils" display_name="Gael Monfils" nationality="FRA"/>
+</ranking>
+<ranking rank="32" points="1219">
+<player id="32901" initials="" first_name="Vasek" last_name="Pospisil" display_name="Vasek Pospisil" nationality="CAN"/>
+</ranking>
+<ranking rank="33" points="1190">
+<player id="397" initials="" first_name="Ivan" last_name="Dodig" display_name="Ivan Dodig" nationality="CRO"/>
+</ranking>
+<ranking rank="34" points="1175">
+<player id="274" initials="" first_name="Jeremy" last_name="Chardy" display_name="Jeremy Chardy" nationality="FRA"/>
+</ranking>
+<ranking rank="35" points="1160">
+<player id="38" initials="" first_name="Julien" last_name="Benneteau" display_name="Julien Benneteau" nationality="FRA"/>
+</ranking>
+<ranking rank="36" points="1130">
+<player id="89" initials="" first_name="Janko" last_name="Tipsarevic" display_name="Janko Tipsarevic" nationality="SRB"/>
+</ranking>
+<ranking rank="37" points="1130">
+<player id="143" initials="" first_name="Marin" last_name="Cilic" display_name="Marin Cilic" nationality="CRO"/>
+</ranking>
+<ranking rank="38" points="1110">
+<player id="154" initials="" first_name="Marcel" last_name="Granollers" display_name="Marcel Granollers" nationality="ESP"/>
+</ranking>
+<ranking rank="39" points="1090">
+<player id="23" initials="" first_name="Jarkko" last_name="Nieminen" display_name="Jarkko Nieminen" nationality="FIN"/>
+</ranking>
+<ranking rank="40" points="1065">
+<player id="31176" initials="" first_name="Florian" last_name="Mayer" display_name="Florian Mayer" nationality="GER"/>
+</ranking>
+<ranking rank="41" points="1020">
+<player id="99" initials="" first_name="Carlos" last_name="Berlocq" display_name="Carlos Berlocq" nationality="ARG"/>
+</ranking>
+<ranking rank="42" points="1015">
+<player id="54" initials="" first_name="Juan" last_name="Monaco" display_name="Juan Monaco" nationality="ARG"/>
+</ranking>
+<ranking rank="43" points="977">
+<player id="142" initials="" first_name="Robin" last_name="Haase" display_name="Robin Haase" nationality="NED"/>
+</ranking>
+<ranking rank="44" points="970">
+<player id="31" initials="" first_name="Radek" last_name="Stepanek" display_name="Radek Stepanek" nationality="CZE"/>
+</ranking>
+<ranking rank="45" points="965">
+<player id="243" initials="" first_name="Denis" last_name="Istomin" display_name="Denis Istomin" nationality="UZB"/>
+</ranking>
+<ranking rank="46" points="960">
+<player id="70" initials="" first_name="Sam" last_name="Querrey" display_name="Sam Querrey" nationality="USA"/>
+</ranking>
+<ranking rank="47" points="956">
+<player id="305" initials="" first_name="Lukas" last_name="Rosol" display_name="Lukas Rosol" nationality="CZE"/>
+</ranking>
+<ranking rank="48" points="946">
+<player id="169" initials="" first_name="Pablo" last_name="Andujar" display_name="Pablo Andujar" nationality="ESP"/>
+</ranking>
+<ranking rank="49" points="934">
+<player id="29870" initials="" first_name="Joao" last_name="Sousa" display_name="Joao Sousa" nationality="POR"/>
+</ranking>
+<ranking rank="50" points="918">
+<player id="112" initials="" first_name="Nicolas" last_name="Mahut" display_name="Nicolas Mahut" nationality="FRA"/>
+</ranking>
+<ranking rank="51" points="910">
+<player id="33754" initials="" first_name="Bernard" last_name="Tomic" display_name="Bernard Tomic" nationality="AUS"/>
+</ranking>
+<ranking rank="52" points="908">
+<player id="155" initials="" first_name="Edouard" last_name="Roger-Vasselin" display_name="Edouard Roger-Vasselin" nationality="FRA"/>
+</ranking>
+<ranking rank="53" points="890">
+<player id="6" initials="" first_name="Nikolay" last_name="Davydenko" display_name="Nikolay Davydenko" nationality="RUS"/>
+</ranking>
+<ranking rank="54" points="836">
+<player id="372" initials="" first_name="Daniel" last_name="Brands" display_name="Daniel Brands" nationality="GER"/>
+</ranking>
+<ranking rank="55" points="836">
+<player id="34539" initials="" first_name="Federico" last_name="Delbonis" display_name="Federico Delbonis" nationality="ARG"/>
+</ranking>
+<ranking rank="56" points="835">
+<player id="220" initials="" first_name="Horacio" last_name="Zeballos" display_name="Horacio Zeballos" nationality="ARG"/>
+</ranking>
+<ranking rank="57" points="825">
+<player id="255" initials="" first_name="Alexandr" last_name="Dolgopolov" display_name="Alexandr Dolgopolov" nationality="UKR"/>
+</ranking>
+<ranking rank="58" points="810">
+<player id="34077" initials="" first_name="Roberto" last_name="Bautista Agut" display_name="Roberto Bautista Agut" nationality="ESP"/>
+</ranking>
+<ranking rank="59" points="784">
+<player id="464" initials="" first_name="Adrian" last_name="Mannarino" display_name="Adrian Mannarino" nationality="FRA"/>
+</ranking>
+<ranking rank="60" points="780">
+<player id="22" initials="" first_name="Lleyton" last_name="Hewitt" display_name="Lleyton Hewitt" nationality="AUS"/>
+</ranking>
+<ranking rank="61" points="774">
+<player id="30332" initials="" first_name="Marinko" last_name="Matosevic" display_name="Marinko Matosevic" nationality="AUS"/>
+</ranking>
+<ranking rank="62" points="768">
+<player id="64" initials="" first_name="Guillermo" last_name="Garcia-Lopez" display_name="Guillermo Garcia-Lopez" nationality="ESP"/>
+</ranking>
+<ranking rank="63" points="766">
+<player id="59" initials="" first_name="Albert" last_name="Montanes" display_name="Albert Montanes" nationality="ESP"/>
+</ranking>
+<ranking rank="64" points="739">
+<player id="34216" initials="" first_name="Pablo" last_name="Carreno Busta" display_name="Pablo Carreno Busta" nationality="ESP"/>
+</ranking>
+<ranking rank="65" points="730">
+<player id="106" initials="" first_name="Yen-Hsun" last_name="Lu" display_name="Yen-Hsun Lu" nationality="TPE"/>
+</ranking>
+<ranking rank="66" points="730">
+<player id="210" initials="" first_name="Michal" last_name="Przysiezny" display_name="Michal Przysiezny" nationality="POL"/>
+</ranking>
+<ranking rank="67" points="721">
+<player id="30454" initials="" first_name="Mikhail" last_name="Kukushkin" display_name="Mikhail Kukushkin" nationality="KAZ"/>
+</ranking>
+<ranking rank="68" points="706">
+<player id="33675" initials="" first_name="Matthew" last_name="Ebden" display_name="Matthew Ebden" nationality="AUS"/>
+</ranking>
+<ranking rank="69" points="703">
+<player id="117" initials="" first_name="Santiago" last_name="Giraldo" display_name="Santiago Giraldo" nationality="COL"/>
+</ranking>
+<ranking rank="70" points="697">
+<player id="280" initials="" first_name="Igor" last_name="Sijsling" display_name="Igor Sijsling" nationality="NED"/>
+</ranking>
+<ranking rank="71" points="694">
+<player id="55" initials="" first_name="Filippo" last_name="Volandri" display_name="Filippo Volandri" nationality="ITA"/>
+</ranking>
+<ranking rank="72" points="686">
+<player id="156" initials="" first_name="Lukasz" last_name="Kubot" display_name="Lukasz Kubot" nationality="POL"/>
+</ranking>
+<ranking rank="73" points="681">
+<player id="214" initials="" first_name="Dudi" last_name="Sela" display_name="Dudi Sela" nationality="ISR"/>
+</ranking>
+<ranking rank="74" points="663">
+<player id="334" initials="" first_name="Tobias" last_name="Kamke" display_name="Tobias Kamke" nationality="GER"/>
+</ranking>
+<ranking rank="75" points="660">
+<player id="198" initials="" first_name="Viktor" last_name="Troicki" display_name="Viktor Troicki" nationality="SRB"/>
+</ranking>
+<ranking rank="76" points="651">
+<player id="75" initials="" first_name="Teymuraz" last_name="Gabashvili" display_name="Teymuraz Gabashvili" nationality="RUS"/>
+</ranking>
+<ranking rank="77" points="650">
+<player id="361" initials="" first_name="Daniel" last_name="Gimeno-Traver" display_name="Daniel Gimeno-Traver" nationality="ESP"/>
+</ranking>
+<ranking rank="78" points="647">
+<player id="80" initials="" first_name="Ivo" last_name="Karlovic" display_name="Ivo Karlovic" nationality="CRO"/>
+</ranking>
+<ranking rank="79" points="637">
+<player id="46" initials="" first_name="Benjamin" last_name="Becker" display_name="Benjamin Becker" nationality="GER"/>
+</ranking>
+<ranking rank="80" points="636">
+<player id="29767" initials="" first_name="Victor" last_name="Hanescu" display_name="Victor Hanescu" nationality="ROM"/>
+</ranking>
+<ranking rank="81" points="625">
+<player id="186" initials="" first_name="Lukas" last_name="Lacko" display_name="Lukas Lacko" nationality="SVK"/>
+</ranking>
+<ranking rank="82" points="620">
+<player id="285" initials="" first_name="Andrey" last_name="Golubev" display_name="Andrey Golubev" nationality="RUS"/>
+</ranking>
+<ranking rank="83" points="617">
+<player id="32923" initials="" first_name="Albert" last_name="Ramos" display_name="Albert Ramos" nationality="ESP"/>
+</ranking>
+<ranking rank="84" points="617">
+<player id="34425" initials="" first_name="Kenny" last_name="De Schepper" display_name="Kenny De Schepper" nationality="FRA"/>
+</ranking>
+<ranking rank="85" points="616">
+<player id="34235" initials="" first_name="Jiri" last_name="Vesely" display_name="Jiri Vesely" nationality="CZE"/>
+</ranking>
+<ranking rank="86" points="612">
+<player id="297" initials="" first_name="Julian" last_name="Reister" display_name="Julian Reister" nationality="GER"/>
+</ranking>
+<ranking rank="87" points="605">
+<player id="21" initials="" first_name="Marcos" last_name="Baghdatis" display_name="Marcos Baghdatis" nationality="CYP"/>
+</ranking>
+<ranking rank="88" points="605">
+<player id="467" initials="" first_name="Alex" last_name="Bogomolov Jr." display_name="Alex Bogomolov Jr." nationality="RUS"/>
+</ranking>
+<ranking rank="89" points="600">
+<player id="30754" initials="" first_name="Tim" last_name="Smyczek" display_name="Tim Smyczek" nationality="USA"/>
+</ranking>
+<ranking rank="90" points="599">
+<player id="31028" initials="" first_name="Somdev" last_name="Devvarman" display_name="Somdev Devvarman" nationality="IND"/>
+</ranking>
+<ranking rank="91" points="597">
+<player id="30206" initials="" first_name="Alejandro" last_name="Gonzalez" display_name="Alejandro Gonzalez" nationality="COL"/>
+</ranking>
+<ranking rank="92" points="594">
+<player id="68" initials="" first_name="Michael" last_name="Russell" display_name="Michael Russell" nationality="USA"/>
+</ranking>
+<ranking rank="93" points="586">
+<player id="30442" initials="" first_name="Oleksandr" last_name="Nedovyesov" display_name="Oleksandr Nedovyesov" nationality="UKR"/>
+</ranking>
+<ranking rank="94" points="579">
+<player id="225" initials="" first_name="Leonardo" last_name="Mayer" display_name="Leonardo Mayer" nationality="ARG"/>
+</ranking>
+<ranking rank="95" points="573">
+<player id="34119" initials="" first_name="Aljaz" last_name="Bedene" display_name="Aljaz Bedene" nationality="SLO"/>
+</ranking>
+<ranking rank="96" points="569">
+<player id="365" initials="" first_name="Donald" last_name="Young" display_name="Donald Young" nationality="USA"/>
+</ranking>
+<ranking rank="97" points="568">
+<player id="34137" initials="" first_name="Bradley" last_name="Klahn" display_name="Bradley Klahn" nationality="USA"/>
+</ranking>
+<ranking rank="98" points="554">
+<player id="181" initials="" first_name="Sergiy" last_name="Stakhovsky" display_name="Sergiy Stakhovsky" nationality="UKR"/>
+</ranking>
+<ranking rank="99" points="552">
+<player id="116" initials="" first_name="Alejandro" last_name="Falla" display_name="Alejandro Falla" nationality="COL"/>
+</ranking>
+<ranking rank="100" points="549">
+<player id="33731" initials="" first_name="Ryan" last_name="Harrison" display_name="Ryan Harrison" nationality="USA"/>
+</ranking>
+<ranking rank="101" points="549">
+<player id="331" initials="" first_name="Jesse" last_name="Huta Galung" display_name="Jesse Huta Galung" nationality="NED"/>
+</ranking>
+<ranking rank="102" points="545">
+<player id="34307" initials="" first_name="Jack" last_name="Sock" display_name="Jack Sock" nationality="USA"/>
+</ranking>
+<ranking rank="103" points="543">
+<player id="240" initials="" first_name="Go" last_name="Soeda" display_name="Go Soeda" nationality="JPN"/>
+</ranking>
+<ranking rank="104" points="542">
+<player id="436" initials="" first_name="Blaz" last_name="Kavcic" display_name="Blaz Kavcic" nationality="SLO"/>
+</ranking>
+<ranking rank="105" points="541">
+<player id="84" initials="" first_name="Michael" last_name="Llodra" display_name="Michael Llodra" nationality="FRA"/>
+</ranking>
+<ranking rank="106" points="540">
+<player id="90" initials="" first_name="Jan" last_name="Hajek" display_name="Jan Hajek" nationality="CZE"/>
+</ranking>
+<ranking rank="107" points="523">
+<player id="34253" initials="" first_name="Jan-Lennard" last_name="Struff" display_name="Jan-Lennard Struff" nationality="GER"/>
+</ranking>
+<ranking rank="108" points="518">
+<player id="30249" initials="" first_name="Martin" last_name="Klizan" display_name="Martin Klizan" nationality="SVK"/>
+</ranking>
+<ranking rank="109" points="515">
+<player id="180" initials="" first_name="Paolo" last_name="Lorenzi" display_name="Paolo Lorenzi" nationality="ITA"/>
+</ranking>
+<ranking rank="110" points="510">
+<player id="33893" initials="" first_name="David" last_name="Goffin" display_name="David Goffin" nationality="BEL"/>
+</ranking>
+<ranking rank="111" points="506">
+<player id="461" initials="" first_name="Dustin" last_name="Brown" display_name="Dustin Brown" nationality="GER"/>
+</ranking>
+<ranking rank="112" points="506">
+<player id="468" initials="" first_name="Andreas" last_name="Haider-Maurer" display_name="Andreas Haider-Maurer" nationality="AUT"/>
+</ranking>
+<ranking rank="113" points="493">
+<player id="32940" initials="" first_name="Evgeny" last_name="Donskoy" display_name="Evgeny Donskoy" nationality="RUS"/>
+</ranking>
+<ranking rank="114" points="491">
+<player id="34067" initials="" first_name="Denis" last_name="Kudla" display_name="Denis Kudla" nationality="USA"/>
+</ranking>
+<ranking rank="115" points="487">
+<player id="300" initials="" first_name="Stephane" last_name="Robert" display_name="Stephane Robert" nationality="FRA"/>
+</ranking>
+<ranking rank="116" points="483">
+<player id="34158" initials="" first_name="Dusan" last_name="Lajovic" display_name="Dusan Lajovic" nationality="SRB"/>
+</ranking>
+<ranking rank="117" points="480">
+<player id="34372" initials="" first_name="Diego Sebastian" last_name="Schwartzman" display_name="Diego Sebastian Schwartzman" nationality="ARG"/>
+</ranking>
+<ranking rank="118" points="478">
+<player id="33825" initials="" first_name="Guido" last_name="Pella" display_name="Guido Pella" nationality="ARG"/>
+</ranking>
+<ranking rank="119" points="474">
+<player id="239" initials="" first_name="Adrian" last_name="Ungur" display_name="Adrian Ungur" nationality="ROM"/>
+</ranking>
+<ranking rank="120" points="469">
+<player id="40" initials="" first_name="Marc" last_name="Gicquel" display_name="Marc Gicquel" nationality="FRA"/>
+</ranking>
+<ranking rank="121" points="467">
+<player id="296" initials="" first_name="Grega" last_name="Zemlja" display_name="Grega Zemlja" nationality="SLO"/>
+</ranking>
+<ranking rank="122" points="460">
+<player id="109" initials="" first_name="Frank" last_name="Dancevic" display_name="Frank Dancevic" nationality="CAN"/>
+</ranking>
+<ranking rank="123" points="456">
+<player id="34122" initials="" first_name="Facundo" last_name="Bagnis" display_name="Facundo Bagnis" nationality="ARG"/>
+</ranking>
+<ranking rank="124" points="454">
+<player id="34333" initials="" first_name="Facundo" last_name="Arguello" display_name="Facundo Arguello" nationality="ARG"/>
+</ranking>
+<ranking rank="125" points="450">
+<player id="30340" initials="" first_name="Thomaz" last_name="Bellucci" display_name="Thomaz Bellucci" nationality="BRA"/>
+</ranking>
+<ranking rank="126" points="443">
+<player id="30948" initials="" first_name="Pere" last_name="Riba" display_name="Pere Riba" nationality="ESP"/>
+</ranking>
+<ranking rank="127" points="439">
+<player id="177" initials="" first_name="Rajeev" last_name="Ram" display_name="Rajeev Ram" nationality="USA"/>
+</ranking>
+<ranking rank="128" points="437">
+<player id="33831" initials="" first_name="Andrej" last_name="Martin" display_name="Andrej Martin" nationality="SVK"/>
+</ranking>
+<ranking rank="129" points="434">
+<player id="44" initials="" first_name="Paul-Henri" last_name="Mathieu" display_name="Paul-Henri Mathieu" nationality="FRA"/>
+</ranking>
+<ranking rank="130" points="434">
+<player id="33816" initials="" first_name="Rhyne" last_name="Williams" display_name="Rhyne Williams" nationality="USA"/>
+</ranking>
+<ranking rank="131" points="433">
+<player id="34366" initials="" first_name="Ricardas" last_name="Berankis" display_name="Ricardas Berankis" nationality="LTU"/>
+</ranking>
+<ranking rank="132" points="432">
+<player id="33972" initials="" first_name="Rogerio" last_name="Dutra Silva" display_name="Rogerio Dutra Silva" nationality="BRA"/>
+</ranking>
+<ranking rank="133" points="432">
+<player id="388" initials="" first_name="Martin" last_name="Alund" display_name="Martin Alund" nationality="ARG"/>
+</ranking>
+<ranking rank="134" points="427">
+<player id="33827" initials="" first_name="Andrey" last_name="Kuznetsov" display_name="Andrey Kuznetsov" nationality="RUS"/>
+</ranking>
+<ranking rank="135" points="425">
+<player id="34" initials="" first_name="Xavier" last_name="Malisse" display_name="Xavier Malisse" nationality="BEL"/>
+</ranking>
+<ranking rank="136" points="425">
+<player id="34407" initials="" first_name="James" last_name="Duckworth" display_name="James Duckworth" nationality="AUS"/>
+</ranking>
+<ranking rank="137" points="423">
+<player id="33994" initials="" first_name="Guillaume" last_name="Rufin" display_name="Guillaume Rufin" nationality="FRA"/>
+</ranking>
+<ranking rank="138" points="410">
+<player id="183" initials="" first_name="Wayne" last_name="Odesnik" display_name="Wayne Odesnik" nationality="USA"/>
+</ranking>
+<ranking rank="139" points="410">
+<player id="34291" initials="" first_name="Dominic" last_name="Thiem" display_name="Dominic Thiem" nationality="AUT"/>
+</ranking>
+<ranking rank="140" points="406">
+<player id="33738" initials="" first_name="Joao" last_name="Souza" display_name="Joao Souza" nationality="BRA"/>
+</ranking>
+<ranking rank="141" points="398">
+<player id="30528" initials="" first_name="Peter" last_name="Polansky" display_name="Peter Polansky" nationality="CAN"/>
+</ranking>
+<ranking rank="142" points="397">
+<player id="160" initials="" first_name="Alex" last_name="Kuznetsov" display_name="Alex Kuznetsov" nationality="USA"/>
+</ranking>
+<ranking rank="143" points="397">
+<player id="110" initials="" first_name="Michael" last_name="Berrer" display_name="Michael Berrer" nationality="GER"/>
+</ranking>
+<ranking rank="144" points="394">
+<player id="483" initials="" first_name="Victor" last_name="Estrella Burgos" display_name="Victor Estrella Burgos" nationality="DOM"/>
+</ranking>
+<ranking rank="145" points="393">
+<player id="34589" initials="" first_name="Guido" last_name="Andreozzi" display_name="Guido Andreozzi" nationality="ARG"/>
+</ranking>
+<ranking rank="146" points="384">
+<player id="433" initials="" first_name="Thiemo" last_name="De Bakker" display_name="Thiemo De Bakker" nationality="NED"/>
+</ranking>
+<ranking rank="147" points="369">
+<player id="30716" initials="" first_name="Marius" last_name="Copil" display_name="Marius Copil" nationality="BUL"/>
+</ranking>
+<ranking rank="148" points="363">
+<player id="33005" initials="" first_name="Ruben" last_name="Bemelmans" display_name="Ruben Bemelmans" nationality="BEL"/>
+</ranking>
+<ranking rank="149" points="350">
+<player id="402" initials="" first_name="Jesse" last_name="Levine" display_name="Jesse Levine" nationality="CAN"/>
+</ranking>
+<ranking rank="150" points="346">
+<player id="30918" initials="" first_name="Daniel" last_name="Evans" display_name="Daniel Evans" nationality="GBR"/>
+</ranking>
+</rankings>
+</abelsoninfo_feed>
