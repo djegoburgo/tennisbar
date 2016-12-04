@@ -1,0 +1,15 @@
+<div class="container text-center">
+    <div class="row">
+      <div class="col-xs-12">
+      Votre sélection de joueurs :
+      <% if @selection.present? and @tournament.present? %>
+        <% if @selection.id = @tournament.id %>
+          <% @selection.players.each do |player| %>
+          <h4><%= player.display_name %>  (<%= player.rank %>)</h4>
+          <i><%= link_to "DELETE PLAYER", selection_player_path(@selection.id, player), method: :delete %></i>
+          <% end %>
+        <% end %>
+      <% end %>
+      </div>
+    </div>
+  </div>

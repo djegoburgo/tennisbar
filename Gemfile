@@ -38,6 +38,7 @@ group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem "simple_form"
+  gem "bootstrap-sass"
 end
 
 group :development do

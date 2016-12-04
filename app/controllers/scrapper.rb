@@ -19,7 +19,7 @@ def scrapper
       Score.destroy_all
       Firstentry.destroy_all
       Secondentry.destroy_all
-      # Player.destroy_all
+      Player.destroy_all
 
         document.xpath('//round').each do |roundnode|
         name = "#{roundnode['name']}"
@@ -78,11 +78,14 @@ def scrapper
         document.xpath('//player').each do |playernode|
         display_name = "#{playernode['display_name']}"
         player_id = "#{playernode['id']}"
+        player_rank = "#{playernode['rank']}"
 
-        p player = {
+        player = {
           "id": player_id,
           "display_name": display_name,
+          "rank": player_rank
         }
+
 
         Round.find_or_create_by(round)
         Match.find_or_create_by(match)
@@ -90,6 +93,7 @@ def scrapper
         Firstentry.find_or_create_by(firstentry)
         Secondentry.find_or_create_by(secondtentry)
         Player.find_or_create_by(player)
+
 
                   end
                 end
