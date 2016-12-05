@@ -3,7 +3,9 @@ def scrapper
 
   require 'nokogiri'
 
-  file      = File.read(Rails.root.join('lib', 'seeds', 'chennai04_tournament.xml'))
+  scraped_tournament = @tournament.id.to_s + ".xml"
+
+  file      = File.read(Rails.root.join('lib', 'seeds', scraped_tournament))
   document  = Nokogiri::XML(file)
 
   round = {}
@@ -19,7 +21,7 @@ def scrapper
       Score.destroy_all
       Firstentry.destroy_all
       Secondentry.destroy_all
-      Player.destroy_all
+      # Player.destroy_all
 
         document.xpath('//round').each do |roundnode|
         name = "#{roundnode['name']}"
@@ -92,7 +94,7 @@ def scrapper
         Score.find_or_create_by(score)
         Firstentry.find_or_create_by(firstentry)
         Secondentry.find_or_create_by(secondtentry)
-        Player.find_or_create_by(player)
+        Player.find_or_create_by(player) unless Player.exists?(id: player_id)
 
 
                   end
