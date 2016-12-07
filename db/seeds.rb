@@ -1,5 +1,5 @@
 
-require 'nokogiri'
+# require 'nokogiri'
 
 # Player.destroy_all
 
@@ -15,11 +15,36 @@ require 'nokogiri'
 #   player.rank = rank
 #   player.save
 
-#   p player
-
 #   end
 # end
 
 
+require 'nokogiri'
 
+Rank.destroy_all
 
+Dir[File.join('lib', 'seeds', '*.xml')].each do |scrap_file|
+
+file      = File.read(Rails.root.join(scrap_file))
+document  = Nokogiri::XML(file)
+
+      document.xpath('tournament').each do |tournamentnode|
+        tournament_id = "#{tournamentnode['id']}"
+
+      document.xpath('//player').each do |playernode|
+        player_id = "#{playernode['id']}"
+        rank = "#{playernode['rank']}"
+
+      rank = {
+        "tournament_id": tournament_id,
+        "player_id": player_id,
+        "current_rank": rank
+      }
+
+      p Rank.find_or_create_by(rank)
+
+    end
+  end
+end
+
+# only create if the player_id exists for a given tournament_id

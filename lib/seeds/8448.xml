@@ -3,10 +3,10 @@
     <round id="43832" name="Final" number="5">
       <match id="3333" date="2014-01-04T04:30:00+00:00">
         <first_entry id="3466" seed_position="1" draw_position="1">
-           <player id="4" initials="" first_name="Rafael" last_name="Nadal" display_name="Rafael Nadal" rank="2" nationality="ESP"/>
+           <player id="4" initials="" first_name="Rafael" last_name="Nadal" display_name="Rafael Nadal" rank="12" nationality="ESP"/>
         </first_entry>
         <second_entry id="3466" seed_position="" draw_position="13">
-          <player id="17" initials="" first_name="Richard" last_name="Gasquet" display_name="Richard Gasquet" rank="9" nationality="FRA"/>
+          <player id="17" initials="" first_name="Richard" last_name="Gasquet" display_name="Richard Gasquet" rank="19" nationality="FRA"/>
         </second_entry>
         <score result_type="Win" number_of_sets="3" winning_entry_id="346621">
           <set number="1" first_entry_games="4" second_entry_games="6" first_entry_tie_break_score="" second_entry_tie_break_score="" winning_entry_id="346620"/>
