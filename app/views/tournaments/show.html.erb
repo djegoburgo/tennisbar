@@ -33,13 +33,13 @@ Tableau :
             <% round.matchs.each do |match| %>
               <br>
               <% match.firstentrys.each do |firstentry| %>
-              (<%= firstentry.player.rank %>)
+              (<%= firstentry.player.ranks.where(tournament_id: @tournament).first.current_rank %>)
               <%= link_to "#{firstentry.player.display_name}", tournament_round_match_firstentry_path(@tournament, round, match, firstentry)%></h4>
               <br>
               v
               <br>
               <% match.secondentrys.each do |secondentry| %>
-              (<%= secondentry.player.rank %>)
+              (<%= secondentry.player.ranks.where(tournament_id: @tournament).first.current_rank %>)
               <%= link_to "#{secondentry.player.display_name}", tournament_round_match_secondentry_path(@tournament, round, match, secondentry)%></h4>
               <br>
               <%= match.score.winning_entry_id %> wins in <%= match.score.number_of_sets %> sets
