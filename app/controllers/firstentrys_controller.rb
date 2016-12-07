@@ -11,7 +11,8 @@ class FirstentrysController < ApplicationController
       "selection_id": selection_id
     }
 
-    Pick.create(pick)
+
+    Pick.find_or_create_by(pick)
     redirect_to(tournament_path(@tournament))
 
     # total_rank_array = []
