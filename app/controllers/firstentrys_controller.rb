@@ -1,28 +1,39 @@
 class FirstentrysController < ApplicationController
-
   before_action :set_params
 
   def show
-      total_rank_array = []
 
-      selection_id = @firstentry.player.selection_id = @selection.id
+    player_id = @firstentry.player.id
+    selection_id = @selection.id
 
-      @selection.players.each do |player|
-        total_rank_array << player.rank
-      end
+    pick = {
+      "player_id": player_id,
+      "selection_id": selection_id
+    }
 
-      if
-        @selection.players.count == 3 and total_rank_array.inject(0){|sum,x| sum + x } < 60
-        flash[:alert] = "nawak"
-        redirect_to(tournament_path(@tournament))
-      elsif
-        @selection.players.count > 3
-        flash[:notice] = "nawak"
-        redirect_to(tournament_path(@tournament))
-      else
-        @firstentry.player.save({"selection_id": selection_id})
-        redirect_to(tournament_path(@tournament))
-      end
+    Pick.create(pick)
+    redirect_to(tournament_path(@tournament))
+
+    # total_rank_array = []
+
+    # selection_id = @firstentry.player.selection_id = @selection.id
+
+    # @selection.players.each do |player|
+    #   total_rank_array << player.ranks.where(tournament_id: @tournament).first.current_rank
+    # end
+
+    # if
+    #   @selection.players.count == 3 and total_rank_array.inject(0){|sum,x| sum + x } < 60
+    #   flash[:alert] = "nawak"
+    #   redirect_to(tournament_path(@tournament))
+    # elsif
+    #   @selection.players.count > 3
+    #   flash[:notice] = "nawak"
+    #   redirect_to(tournament_path(@tournament))
+    # else
+    #   @firstentry.player.save({"selection_id": selection_id})
+    #   redirect_to(tournament_path(@tournament))
+    # end
   end
 
     private

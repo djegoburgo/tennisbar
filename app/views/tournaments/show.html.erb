@@ -2,18 +2,14 @@
 <!-- <h3><%= @tournament.id %></h3> -->
 <div class="container text-center">
     <div class="row">
-      <div class="col-xs-12">
-      Votre sélection de joueurs :
-      <% if @selections.present? and @tournament.present? %>
-        <% if @selections.first.id = @tournament.id %>
-          <% @selections.first.players.each do |player| %>
-          <h4><%= player.display_name %>  (<%= player.rank %>)</h4>
+      <% if @selection.present? and @tournament.present? %>
+        <% @picks.each do |pick| %>
+        <%= pick.player.display_name %>
+        <%= pick.player.ranks.where(tournament_id: @tournament).first.current_rank %>
         <!--   Pour effacer je renvoie vers la methode delete du selection controler -->
-          <i><%= link_to "DELETE PLAYER", selection_player_path(@selections.first.id, player), method: :delete %></i>
-          <% end %>
+        <i><%= link_to "DELETE PLAYER", selection_player_path(@selection.first.id, pick.player), method: :delete %></i>
         <% end %>
       <% end %>
-      </div>
     </div>
   </div>
 <br>

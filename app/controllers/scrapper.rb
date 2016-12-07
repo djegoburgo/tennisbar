@@ -21,7 +21,7 @@ def scrapper
       Score.destroy_all
       Firstentry.destroy_all
       Secondentry.destroy_all
-      Player.destroy_all
+      # Player.destroy_all
 
         document.xpath('//round').each do |roundnode|
         name = "#{roundnode['name']}"

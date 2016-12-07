@@ -4,6 +4,7 @@ class TournamentsController < ApplicationController
 
   before_action :set_tournament, only: [:show, :search_rounds]
   before_action :set_selections
+  before_action :set_pick
 
   def index
     require 'open-uri'
@@ -41,7 +42,10 @@ class TournamentsController < ApplicationController
   end
 
   def set_selections
-    @selections = Selection.all
+    @selection = Selection.where(id: @tournament)
   end
 
+  def set_pick
+    @picks = Pick.where(selection_id: @tournament)
+  end
 end

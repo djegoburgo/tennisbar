@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161207183527) do
+ActiveRecord::Schema.define(version: 20161207203111) do
 
   create_table "firstentries", force: :cascade do |t|
     t.integer  "draw_position"
@@ -33,14 +33,21 @@ ActiveRecord::Schema.define(version: 20161207183527) do
 
   add_index "matches", ["round_id"], name: "index_matches_on_round_id"
 
+  create_table "picks", force: :cascade do |t|
+    t.integer  "player_id"
+    t.integer  "selection_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "picks", ["player_id"], name: "index_picks_on_player_id"
+  add_index "picks", ["selection_id"], name: "index_picks_on_selection_id"
+
   create_table "players", force: :cascade do |t|
     t.string   "display_name"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
-    t.integer  "selection_id"
   end
-
-  add_index "players", ["selection_id"], name: "index_players_on_selection_id"
 
   create_table "ranks", force: :cascade do |t|
     t.integer  "tournament_id"
