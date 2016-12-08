@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161207203111) do
+ActiveRecord::Schema.define(version: 20161208195344) do
 
   create_table "firstentries", force: :cascade do |t|
     t.integer  "draw_position"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20161207203111) do
     t.integer  "selection_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.boolean  "validated"
   end
 
   add_index "picks", ["player_id"], name: "index_picks_on_player_id"

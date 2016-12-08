@@ -2,13 +2,13 @@ class FirstentrysController < ApplicationController
   before_action :set_params
 
   def show
-
     player_id = @firstentry.player.id
     selection_id = @selection.id
 
     pick = {
       "player_id": player_id,
-      "selection_id": selection_id
+      "selection_id": selection_id,
+      "validated": false
     }
 
     total_rank_array = []

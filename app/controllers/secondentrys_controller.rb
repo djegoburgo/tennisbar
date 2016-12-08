@@ -7,7 +7,8 @@ class SecondentrysController < ApplicationController
 
     pick = {
       "player_id": player_id,
-      "selection_id": selection_id
+      "selection_id": selection_id,
+      "validated": false
     }
 
     total_rank_array = []
@@ -27,6 +28,7 @@ class SecondentrysController < ApplicationController
     else
       Pick.find_or_create_by(pick)
       redirect_to(tournament_path(@tournament))
+
     end
     # total_rank_array = []
 

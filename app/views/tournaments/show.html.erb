@@ -5,8 +5,10 @@
       <% if @selection.present? and @tournament.present? %>
         <% @picks.each do |pick| %>
         <%= pick.player.display_name %>
+        <%= pick.validated %>
         <%= pick.player.ranks.where(tournament_id: @tournament).first.current_rank %>
         <!--   Pour effacer je renvoie vers la methode delete du selection controler -->
+        <i><%= link_to "VALIDATE PLAYER", selection_pick_path(@selection.first.id, pick)%></i>
         <i><%= link_to "DELETE PLAYER", selection_player_path(@selection.first.id, pick.player), method: :delete %></i>
           <% @selection_rank += pick.player.ranks.where(tournament_id: @tournament).first.current_rank %>
         <% end %>
