@@ -33,6 +33,8 @@ class TournamentsController < ApplicationController
 
   def show
     scrapper
+
+    @selection_rank = 0
   end
 
   private

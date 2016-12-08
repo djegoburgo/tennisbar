@@ -2,16 +2,19 @@
 <!-- <h3><%= @tournament.id %></h3> -->
 <div class="container text-center">
     <div class="row">
-
       <% if @selection.present? and @tournament.present? %>
         <% @picks.each do |pick| %>
         <%= pick.player.display_name %>
         <%= pick.player.ranks.where(tournament_id: @tournament).first.current_rank %>
         <!--   Pour effacer je renvoie vers la methode delete du selection controler -->
         <i><%= link_to "DELETE PLAYER", selection_player_path(@selection.first.id, pick.player), method: :delete %></i>
+          <% @selection_rank += pick.player.ranks.where(tournament_id: @tournament).first.current_rank %>
         <% end %>
       <% end %>
-      <%= %>
+      <br>
+      <br>
+      classement cumulé
+      <%= @selection_rank %>
     </div>
   </div>
 <br>
@@ -32,13 +35,13 @@ Tableau :
               <br>
               <% match.firstentrys.each do |firstentry| %>
               (<%= firstentry.player.ranks.where(tournament_id: @tournament).first.current_rank %>)
-              <%= link_to "#{firstentry.player.display_name}", tournament_round_match_firstentry_path(@tournament, round, match, firstentry)%></h4>
+              <%= link_to "#{firstentry.player.display_name}", tournament_round_match_firstentry_path(@tournament, round, match, firstentry)%>
               <br>
               v
               <br>
               <% match.secondentrys.each do |secondentry| %>
               (<%= secondentry.player.ranks.where(tournament_id: @tournament).first.current_rank %>)
-              <%= link_to "#{secondentry.player.display_name}", tournament_round_match_secondentry_path(@tournament, round, match, secondentry)%></h4>
+              <%= link_to "#{secondentry.player.display_name}", tournament_round_match_secondentry_path(@tournament, round, match, secondentry)%>
               <br>
               <%= match.score.winning_entry_id %> wins in <%= match.score.number_of_sets %> sets
              <br>
