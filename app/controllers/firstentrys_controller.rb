@@ -22,7 +22,7 @@ class FirstentrysController < ApplicationController
       flash[:notice] = "STOP"
       redirect_to(tournament_path(@tournament))
     elsif
-      @selection.picks.size == 3 and total_rank_array.inject(0){|sum,x| sum + x } < 60
+      @selection.picks.size > 3 and total_rank_array.inject(0){|sum,x| sum + x } < 60
       flash[:alert] = "nawak"
       redirect_to(tournament_path(@tournament))
     else
