@@ -10,8 +10,24 @@ class SecondentrysController < ApplicationController
       "selection_id": selection_id
     }
 
-    Pick.find_or_create_by(pick)
-    redirect_to(tournament_path(@tournament))
+    total_rank_array = []
+
+    @selection.picks.each do |pick|
+        total_rank_array << pick.player.ranks.where(tournament_id: @tournament).first.current_rank
+    end
+
+    if
+      @selection.picks.size > 3
+      flash[:notice] = "STOP"
+      redirect_to(tournament_path(@tournament))
+    elsif
+      @selection.picks.size == 3 and total_rank_array.inject(0){|sum,x| sum + x } < 60
+      flash[:alert] = "nawak"
+      redirect_to(tournament_path(@tournament))
+    else
+      Pick.find_or_create_by(pick)
+      redirect_to(tournament_path(@tournament))
+    end
     # total_rank_array = []
 
     # selection_id = @secondentry.player.selection_id = @selection.id
