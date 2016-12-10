@@ -8,15 +8,18 @@
         <%= pick.validated %>
         <%= pick.player.ranks.where(tournament_id: @tournament).first.current_rank %>
         <!--   Pour effacer je renvoie vers la methode delete du selection controler -->
-        <i><%= link_to "VALIDATE PLAYER", selection_pick_path(@selection.first.id, pick)%></i>
-        <i><%= link_to "DELETE PLAYER", selection_player_path(@selection.first.id, pick.player), method: :delete %></i>
-          <% @selection_rank += pick.player.ranks.where(tournament_id: @tournament).first.current_rank %>
-        <% end %>
+          <% if pick.validated == false %>
+            <i><%= link_to "OK", selection_pick_path(@selection.first.id, pick)%></
+            i>
+            <i><%= link_to "SUP", selection_player_path(@selection.first.id, pick.player), method: :delete %></i>
+          <% end %>
+        <% @selection_rank += pick.player.ranks.where(tournament_id: @tournament).first.current_rank %>
       <% end %>
       <br>
       <br>
       classement cumulé
       <%= @selection_rank %>
+      <% end %>
     </div>
   </div>
 <br>

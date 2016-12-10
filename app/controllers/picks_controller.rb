@@ -6,7 +6,6 @@ class PicksController < ApplicationController
     @pick.validated = true
     @pick.save
     redirect_to tournament_path(@pick.selection_id)
-
   end
 
 
