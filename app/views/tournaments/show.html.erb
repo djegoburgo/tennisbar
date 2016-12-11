@@ -18,7 +18,7 @@
       <br>
       <br>
       classement cumulé
-      <%= @selection_rank %>
+      <%= @selection_rank %> / 60
       <% end %>
     </div>
   </div>
@@ -43,9 +43,15 @@ Tableau :
                 <!-- restriction faisant que l'on ne pas sélectionner les joueurs dans les rounds passés déjà sélectionnés -->
               <% if round.number == @tournament.rounds.size + 1  or round.number < @tournament.rounds.size + 1%>
                 <%= firstentry.player.display_name %>
-                <!-- fait que l'on ne peut joueur déjà sélectionné -->
+                <!-- fait que l'on ne peut prendre un joueur déjà sélectionné -->
               <% elsif @picks.where(player_id: firstentry.player.id).any? %>
                 <%= firstentry.player.display_name %>
+                <!-- ne laisser clickables que les joueurs que l’on peut sélectionner -->
+              <% elsif @picks.size == 3 and firstentry.player.ranks.where(tournament_id: @tournament).first.current_rank < 60 - @selection_rank %>
+              <!-- quand 4 joueurs sont sélectionnés -->
+              <%= firstentry.player.display_name %>
+              <% elsif @picks.size == 4 %>
+              <%= firstentry.player.display_name %>
               <% else %>
               <!-- fin -->
                 <strong><%= link_to "#{firstentry.player.display_name}", tournament_round_match_firstentry_path(@tournament, round, match, firstentry)%></strong>
@@ -62,6 +68,11 @@ Tableau :
                   <!-- fait que l'on ne peut joueur déjà sélectionné -->
                 <% elsif @picks.where(player_id: secondentry.player.id).any? %>
                   <%= secondentry.player.display_name %>
+                <% elsif @picks.size == 3 and secondentry.player.ranks.where(tournament_id: @tournament).first.current_rank < 60 - @selection_rank %>
+                <%= secondentry.player.display_name %>
+                <!-- quand 4 joueurs sont sélectionnés -->
+                <% elsif @picks.size == 4 %>
+                <%= secondentry.player.display_name %>
                   <!-- fin -->
               <% else %>
                 <strong><%= link_to "#{secondentry.player.display_name}", tournament_round_match_secondentry_path(@tournament, round, match, secondentry)%></strong>

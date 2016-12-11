@@ -21,10 +21,11 @@ class SecondentrysController < ApplicationController
       @selection.picks.size > 3
       flash[:notice] = "STOP"
       redirect_to(tournament_path(@tournament))
-    elsif
-      @selection.picks.size > 2 and total_rank_array.inject(0){|sum,x| sum + x } < 60
-      flash[:alert] = "nawak"
-      redirect_to(tournament_path(@tournament))
+    # elsif
+    #   @selection.picks.size > 2 and total_rank_array.inject(0){|sum,x| sum + x } < 60
+    #   # raise
+    #   flash[:alert] = "nawak"
+    #   redirect_to(tournament_path(@tournament))
     else
       Pick.find_or_create_by(pick)
       redirect_to(tournament_path(@tournament))
