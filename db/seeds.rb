@@ -1,22 +1,61 @@
+  # require 'nokogiri'
 
-# require 'nokogiri'
+  # # scraped_tournament = @tournament.id.to_s + ".xml"
 
-# Player.destroy_all
+  # file      = File.read(Rails.root.join('lib', 'seeds', '8449.xml'))
+  # document  = Nokogiri::XML(file)
 
-# file      = File.read(Rails.root.join('lib', 'seeds', 'ranking.xml'))
-# document  = Nokogiri::XML(file)
+  # round = {}
 
-# document.xpath('//ranking').each do |ranking_node|
-#   rank = "#{ranking_node['rank']}"
-#  ranking_node.xpath('player').each do |player|
-#   player_id = "#{player['id']}"
+  # # récupération du tournament id pour s'assurer que l'on afficher les données du bon tournoi
+  # document.xpath('tournament').each do |tournament|
+  # tournoi_id = "#{tournament['id']}"
 
-#   player = Player.where("id": player_id).first_or_initialize
-#   player.rank = rank
-#   player.save
+  #   # récupération des infos relatives au round
 
-#   end
-# end
+  #     Round.destroy_all
+  #     Match.destroy_all
+  #     Score.destroy_all
+  #     Firstentry.destroy_all
+  #     Secondentry.destroy_all
+  #     # Player.destroy_all
+
+  #       document.xpath('//round').each do |roundnode|
+  #       name = "#{roundnode['name']}"
+  #       number = "#{roundnode['number']}"
+  #       round_id = "#{roundnode['id']}"
+
+  #       round = {
+  #         "id": round_id,
+  #         "name": name,
+  #         "number": number,
+  #         "tournament_id": tournoi_id,
+  #       }
+
+  #       roundnode.xpath('match').each do |matchnode|
+  #       match_id = "#{matchnode['id']}"
+  #       match_date = "#{matchnode['date']}"
+
+  #       match = {
+  #         "id": match_id,
+  #         "round_id": round_id,
+  #         "match_date": match_date
+  #       }
+
+  #       p Match.find_or_create_by(match)
+
+
+  #     end
+  #   end
+  # end
+
+
+
+
+
+
+
+
 
 
 require 'nokogiri'
@@ -41,10 +80,10 @@ document  = Nokogiri::XML(file)
         "current_rank": rank
       }
 
-      p Rank.find_or_create_by(rank)
+      Rank.find_or_create_by(rank)
 
     end
   end
 end
 
-# only create if the player_id exists for a given tournament_id
+

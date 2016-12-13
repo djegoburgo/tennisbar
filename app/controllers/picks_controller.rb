@@ -5,6 +5,7 @@ class PicksController < ApplicationController
     @pick = Pick.find(params[:id])
     @pick.validated = true
     @pick.update(@pick.attributes)
+
     redirect_to tournament_path(@pick.selection_id)
   end
 

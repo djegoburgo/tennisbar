@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161208195344) do
+ActiveRecord::Schema.define(version: 20161213144957) do
 
   create_table "firstentries", force: :cascade do |t|
     t.integer  "draw_position"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20161208195344) do
     t.integer  "round_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "match_date"
   end
 
   add_index "matches", ["round_id"], name: "index_matches_on_round_id"

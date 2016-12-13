@@ -37,10 +37,12 @@ def scrapper
 
         roundnode.xpath('match').each do |matchnode|
         match_id = "#{matchnode['id']}"
+        match_date = "#{matchnode['date']}"
 
         match = {
           "id": match_id,
-          "round_id": round_id
+          "round_id": round_id,
+          "match_date": match_date
         }
 
         matchnode.xpath('score').each do |scorenode|
@@ -88,7 +90,7 @@ def scrapper
 
 
         Round.find_or_create_by(round)
-        Match.find_or_create_by(match)
+        Match.find_or_create_by(match) unless Match.exists?(id: match_id)
         Score.find_or_create_by(score)
         Firstentry.find_or_create_by(firstentry)
         Secondentry.find_or_create_by(secondtentry)
